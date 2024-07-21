@@ -1,3 +1,13 @@
+#编程
+wcjiang/reference:latest
+corentinth/it-tools:latest
+#gpt
+yidadaa/chatgpt-next-web:latest
+yidadaa/chatgpt-next-web:v2.13.1
+#NAS面板
+hslr/sun-panel:1.5.1
+#centos7
+centos:7
 #nginx
 nginx:latest
 nginx:stable
