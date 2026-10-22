@@ -1,7 +1,7 @@
 #编程
-# node:24-bookworm-slim
-# node:latest
-# gitlab/gitlab-ce:latest
+node:24-bookworm-slim
+node:latest
+gitlab/gitlab-ce:latest
 # wcjiang/reference:latest
 # corentinth/it-tools:latest
 #gpt
