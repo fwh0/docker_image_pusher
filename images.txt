@@ -1,5 +1,5 @@
 #编程
-# mirror.gcr.io/library/node:24-bookworm-slim
+mirror.gcr.io/library/node:24-bookworm-slim
 # node:latest
 # gitlab/gitlab-ce:latest
 # wcjiang/reference:latest
