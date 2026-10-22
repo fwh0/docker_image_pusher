@@ -107,7 +107,10 @@ jobs:
             fi
         
             echo "docker pull $line"
-            docker pull $line
+            if ! docker pull $line; then
+                echo "::warning title=Skipped image::Failed to pull $line; skipping this image."
+                continue
+            fi
             platform=$(echo "$line" | awk -F'--platform[ =]' '{if (NF>1) print $2}' | awk '{print $1}')
             echo "platform is $platform"
             # 如果存在架构信息 将架构信息拼到镜像名称前面
