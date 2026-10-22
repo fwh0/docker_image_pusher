@@ -1,78 +1,78 @@
 #编程
-node:24-bookworm-slim
-gitlab/gitlab-ce:latest
-wcjiang/reference:latest
-corentinth/it-tools:latest
+# node:24-bookworm-slim
+# gitlab/gitlab-ce:latest
+# wcjiang/reference:latest
+# corentinth/it-tools:latest
 #gpt
-yidadaa/chatgpt-next-web:latest
-yidadaa/chatgpt-next-web:v2.13.1
+# yidadaa/chatgpt-next-web:latest
+# yidadaa/chatgpt-next-web:v2.13.1
 #NAS面板
-hslr/sun-panel:1.5.1
+# hslr/sun-panel:1.5.1
 #linux系统
-centos:7
+# centos:7
 #apache服务器
-httpd:latest
-httpd:2.4
-httpd:2
+# httpd:latest
+# httpd:2.4
+# httpd:2
 #nginx服务器
-nginx:latest
-nginx:stable
-nginx:1.27
+# nginx:latest
+# nginx:stable
+# nginx:1.27
 #zookeeper
-zookeeper:latest
-zookeeper:3.9
-zookeeper:3.9-jre-17
-zookeeper:3.8
-zookeeper:3.8-jre-17
-zookeeper:3.7
-zookeeper:3.7-jre-11
+# zookeeper:latest
+# zookeeper:3.9
+# zookeeper:3.9-jre-17
+# zookeeper:3.8
+# zookeeper:3.8-jre-17
+# zookeeper:3.7
+# zookeeper:3.7-jre-11
 #elasticsearch
-elasticsearch:latest
-elasticsearch:8.14.3
-elasticsearch:7.17.22
-elasticsearch:7.10.1
+# elasticsearch:latest
+# elasticsearch:8.14.3
+# elasticsearch:7.17.22
+# elasticsearch:7.10.1
 #rabbitMQ
-bitnami/rabbitmq:latest
-bitnami/rabbitmq:3.13
-bitnami/rabbitmq:3.10
+# bitnami/rabbitmq:latest
+# bitnami/rabbitmq:3.13
+# bitnami/rabbitmq:3.10
 #kafka
-bitnami/kafka:latest
-bitnami/kafka:3.7
-bitnami/kafka:2.8
+# bitnami/kafka:latest
+# bitnami/kafka:3.7
+# bitnami/kafka:2.8
 #非关系型数据库redis
-redis:latest
-redis:7.2
-redis:6
+# redis:latest
+# redis:7.2
+# redis:6
 #非关系型数据库mongodb
-mongo:latest
-mongo:7
-mongo:6
-mongo:5
+# mongo:latest
+# mongo:7
+# mongo:6
+# mongo:5
 #非关系型数据库memcached
-memcached:latest
-memcached:1.6
+# memcached:latest
+# memcached:1.6
 #关系型数据库postgres
-postgres:latest
-postgres:16
-postgres:15
-postgres:14
-postgres:13
-postgres:12
+# postgres:latest
+# postgres:16
+# postgres:15
+# postgres:14
+# postgres:13
+# postgres:12
 #关系型数据库mysql
-mysql:latest
-mysql:lts
-mysql:9
-mysql:8
-mysql:5.7
+# mysql:latest
+# mysql:lts
+# mysql:9
+# mysql:8
+# mysql:5.7
 #关系型数据库sqlserver
-mcr.microsoft.com/mssql/server:2022-latest
-mcr.microsoft.com/mssql/server:2019-latest
-mcr.microsoft.com/mssql/server:2017-latest
+# mcr.microsoft.com/mssql/server:2022-latest
+# mcr.microsoft.com/mssql/server:2019-latest
+# mcr.microsoft.com/mssql/server:2017-latest
 #ikev2
-hwdsl2/ipsec-vpn-server:latest
---platform=linux/arm64 hwdsl2/ipsec-vpn-server:latest
-hwdsl2/ipsec-vpn-server:debian
---platform=linux/arm64 hwdsl2/ipsec-vpn-server:debian
+# hwdsl2/ipsec-vpn-server:latest
+# --platform=linux/arm64 hwdsl2/ipsec-vpn-server:latest
+# hwdsl2/ipsec-vpn-server:debian
+# --platform=linux/arm64 hwdsl2/ipsec-vpn-server:debian
 #支持私库
 #k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 #xhofe/alist:latest
