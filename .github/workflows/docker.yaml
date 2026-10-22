@@ -12,6 +12,9 @@ env:
   ALIYUN_REGISTRY_USER: "${{ secrets.ALIYUN_REGISTRY_USER }}"
   ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
 
+permissions:
+  contents: write
+
 jobs:
 
   build:
@@ -98,8 +101,10 @@ jobs:
             fi       
         done < images.txt
         
-        
+        line_number=0
+        images_updated=false
         while IFS= read -r line || [ -n "$line" ]; do
+            line_number=$((line_number + 1))
             # 忽略空行与注释
             [[ -z "$line" ]] && continue
             if echo "$line" | grep -q '^\s*#'; then
@@ -108,7 +113,9 @@ jobs:
         
             echo "docker pull $line"
             if ! docker pull $line; then
-                echo "::warning title=Skipped image::Failed to pull $line; skipping this image."
+                echo "::warning title=Skipped image::Failed to pull $line; commenting it out in images.txt."
+                sed -i "${line_number}s/^/# /" images.txt
+                images_updated=true
                 continue
             fi
             platform=$(echo "$line" | awk -F'--platform[ =]' '{if (NF>1) print $2}' | awk '{print $1}')
@@ -158,3 +165,11 @@ jobs:
             echo "=============================================================================="     
             
         done < images.txt
+
+        if [[ "$images_updated" == "true" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add images.txt
+            git commit -m "Comment out unavailable Docker images [skip ci]"
+            git push origin HEAD:main
+        fi
