@@ -1,26 +1,26 @@
 #编程
 # node:24-bookworm-slim
-node:latest
-gitlab/gitlab-ce:latest
-wcjiang/reference:latest
-corentinth/it-tools:latest
+# node:latest
+# gitlab/gitlab-ce:latest
+# wcjiang/reference:latest
+# corentinth/it-tools:latest
 #gpt
-yidadaa/chatgpt-next-web:latest
+# yidadaa/chatgpt-next-web:latest
 # yidadaa/chatgpt-next-web:v2.13.1
 #NAS面板
 # hslr/sun-panel:1.5.1
 #linux系统
 # centos:7
 #apache服务器
-httpd:latest
+# httpd:latest
 # httpd:2.4
 # httpd:2
 #nginx服务器
-nginx:latest
+# nginx:latest
 # nginx:stable
 # nginx:1.27
 #zookeeper
-zookeeper:latest
+# zookeeper:latest
 # zookeeper:3.9
 # zookeeper:3.9-jre-17
 # zookeeper:3.8
@@ -41,26 +41,26 @@ zookeeper:latest
 # bitnami/kafka:3.7
 # bitnami/kafka:2.8
 #非关系型数据库redis
-redis:latest
+# redis:latest
 # redis:7.2
 # redis:6
 #非关系型数据库mongodb
-mongo:latest
+# mongo:latest
 # mongo:7
 # mongo:6
 # mongo:5
 #非关系型数据库memcached
-memcached:latest
+# memcached:latest
 # memcached:1.6
 #关系型数据库postgres
-postgres:latest
+# postgres:latest
 # postgres:16
 # postgres:15
 # postgres:14
 # postgres:13
 # postgres:12
 #关系型数据库mysql
-mysql:latest
+# mysql:latest
 # mysql:lts
 # mysql:9
 # mysql:8
@@ -70,8 +70,8 @@ mysql:latest
 # mcr.microsoft.com/mssql/server:2019-latest
 # mcr.microsoft.com/mssql/server:2017-latest
 #ikev2
-hwdsl2/ipsec-vpn-server:latest
---platform=linux/arm64 hwdsl2/ipsec-vpn-server:latest
+# hwdsl2/ipsec-vpn-server:latest
+# --platform=linux/arm64 hwdsl2/ipsec-vpn-server:latest
 # hwdsl2/ipsec-vpn-server:debian
 # --platform=linux/arm64 hwdsl2/ipsec-vpn-server:debian
 #支持私库
