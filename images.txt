@@ -1,6 +1,7 @@
 #编程
 # mirror.gcr.io/library/node:24-bookworm-slim
-easytier/easytier:latest
+# easytier/easytier:latest
+rustdesk/rustdesk-server:latest
 # node:latest
 # gitlab/gitlab-ce:latest
 # wcjiang/reference:latest
